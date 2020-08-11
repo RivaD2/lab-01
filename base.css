@@ -1,0 +1,10 @@
+
+body {
+  background-color: rgb(207, 204, 204);
+  color:black;
+}
+@media (min-width:768px) {
+  body {
+    background-color: rgb(123, 216, 123);
+  }
+}
