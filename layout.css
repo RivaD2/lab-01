@@ -1,0 +1,57 @@
+.flex-container {
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+}
+.container-1 {
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+}
+#order1 {
+  width: 480px;
+  height: 75px;
+  text-align: center;
+}
+#order2 {
+  width: 480px;
+  height:150px;
+  text-align:center;
+}
+#order3 {
+  width:480px;
+  height:125px;
+  text-align:center;
+}
+#order4 {
+  width:480px;
+  height:125px;
+  text-align:center;
+}
+#order5 {
+  width:240px;
+  height:250px;
+  text-align:center;
+  flex-wrap: wrap;
+}
+#order6 {
+  width:240px;
+  height:250px;
+  text-align:center;
+}
+#order7 {
+  width:240px;
+  height:250px;
+  text-align:center;
+}
+#order8 {
+  width:240px;
+  height:250px;
+  text-align:center;
+}
+#order9 {
+  width:480px;
+  height:80px;
+  text-align:center;
+}
