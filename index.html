@@ -9,34 +9,35 @@
   <link rel ="stylesheet" href="layout.css">
   <link rel="stylesheet" href="modules.css">
 </head>
-
+<!-- Refactored Flexbox code to work with mobile and desktop and added media query for tablet -->
+<!-- I had to get rid of everything and start with a class of box -->
+<!-- Once I had all boxes working, I was able to separate into groups. Starting with E-H -->
+<!-- E-H became one unit, so I had to look at the other boxes that needed to be grouped together
+    C-D needed to be a unit, so they were grouped together -->
+<!-- Had to ZOOM OUT and saw that clyde and efgh and i acted as a unit so they all went in a container called Moe -->
+<!-- Had to zoom out again, and saw that b and Moe also acted as a unit, so they were placed in the container Bonnie -->
+<!-- When I say "unit" they are a group that changed their positions when these breakpoints occurred -->
 <body>
   <div id="page-container">
+    <div id="order1" class="box">a</div>
+    <section class="bonnie">
+      <div id="order2" class="box">b</div>
+    <section class="moe">
+      <section class="clyde">
+        <div id="order3" class="box">c</div>
+        <div id="order4" class="box">d</div>
+      </section>
 
-<div class="flex-container">
-  <div id="order1">a</div>
-</div>
-  <div class="flex-container">
-  <div id="order2">b</div>
-</div>
-<div class="flex-container">
-  <div id="order3">c</div>
-</div>
-<div class="flex-container">
-  <div id="order4">d</div>
-</div>
+      <section class="flex-wrap">
+        <div class="box border-efgh" >e</div>
+        <div class="box border-efgh">f</div>
+        <div class="box border-efgh">g</div>
+        <div class="box border-efgh">h</div>
+      </section>
 
-<section class="flex-wrap">
-  <div class="border-efgh">e</div>
-  <div class="border-efgh">f</div>
-  <div class="border-efgh">g</div>
-  <div class="border-efgh">h</div>
-</section>
-
-<div class="flex-last">
-    <div id="order9">i</div>
-</div>
-
+      <div id="order9" class="box">i</div>
+    </section>
+    </section>
 </div>
 </body>
 

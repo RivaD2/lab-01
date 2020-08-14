@@ -1,10 +1,11 @@
+* {
+box-sizing: border-box;
+}
 
-body {
-  background-color: rgb(207, 204, 204);
-  color:black;
-}
-@media (min-width:768px) {
-  body {
-    background-color: rgb(123, 216, 123);
+@media only screen 
+  and (min-device-width: 500px) 
+  and (max-device-width: 600px) {
+    body {
+      background-color: rgb(85, 26, 87);
+    }
   }
-}

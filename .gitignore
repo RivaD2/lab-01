@@ -1,7 +1,7 @@
 # User defined
 .DS_Store
 *.diff
-
+.vscode/
 # Logs
 logs
 *.log
