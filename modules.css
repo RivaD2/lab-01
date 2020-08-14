@@ -1,17 +1,16 @@
-.flex-container {
-  border: 1px solid black;
-}
 
- 
 
-.box-1 {
+ .page-container {
+   justify-content: center;
+   align-items: center;
+ }
+
+.box {
   border:1px solid black;
+  background-color: rgb(212, 84, 105);
 }
-
-.border-efgh {
-  border:1px solid black;
-}
-
-#order9 {
-  border: 1px solid black;
+@media (min-width:768px) {
+  .box {
+    background-color: rgb(123, 216, 123);
+  }
 }
