@@ -9,7 +9,15 @@
   border:1px solid black;
   background-color: rgb(212, 84, 105);
 }
+
 @media (min-width:768px) {
+  .box {
+    background-color: rgb(119, 149, 206);
+  }
+}
+/* CSS is evaluated in order so the botton media query will override the top */
+/* the top is for tablet, mobile is default, and desktop is below */
+@media (min-width:960px) {
   .box {
     background-color: rgb(123, 216, 123);
   }

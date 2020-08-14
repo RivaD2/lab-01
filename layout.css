@@ -5,13 +5,15 @@
   display: flex;
   flex-direction: column;
 }
-
+/* All the boxes behave the same so created a class for box and gave it to all "units" */
 .box {
   display: flex;
   flex-grow: 1;
   justify-content: space-around;
   align-items: center;
 }
+/* On mobile, all of it was stacked vertically so all containers are columns */
+/* On desktop they changed so media query was used with different specifications */
 .bonnie, .clyde, .moe {
   display: flex;
   flex-direction: column;
@@ -60,7 +62,11 @@
   height:80px;
   text-align:center;
 }
-
+/* Anytime I want to create different templates, I need to put CSS in a media query that contains the breakpoint */
+/* When styling different breakpoints, style rules go in media query for each specific breakpoint */
+/* Flex Basis ultiamtely says if something isn't shrinking or growing, then THIS is the size it should be.  */
+/* If flex-grow: 0px; then flex-basis is the maximum size */
+/* If flex-shrink: 0px; then flex-basis is minimum size */
 @media (min-width: 768px) {
 
   #order2 {
